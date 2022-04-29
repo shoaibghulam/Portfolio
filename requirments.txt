@@ -1,12 +1,8 @@
 asgiref==3.3.1
 certifi==2020.12.5
 chardet==4.0.0
-Django @ file:///C:/Users/Shoaib/Downloads/Video/Django-3.1.5-py3-none-any.whl
+Django==3.1.5
 djangorestframework==3.11.1
-fcm-django==0.3.7
-idna==2.10
-numpy @ file:///C:/Users/Shoaib/Downloads/Video/numpy-1.20.1-cp37-cp37m-win_amd64.whl
-pandas @ file:///C:/Users/Shoaib/Downloads/Video/pandas-1.1.5-cp37-cp37m-win_amd64.whl
 passlib==1.7.4
 Pillow==8.1.0
 pyfcm==1.4.9
