@@ -1,5 +1,5 @@
 from django.shortcuts import render , HttpResponse , redirect
-from .models import About,Cv,SkillModel,ServiceModel, WorkModel , SerSkillModel , SerServiceModel , SerWorkModel , SettingModel ,  UsersModel , ContactModel , SerContactModel
+from .models import *
 from passlib.hash import django_pbkdf2_sha256
 from django.core.paginator import Paginator
 
@@ -402,6 +402,7 @@ def Home(request):
     work = WorkModel.objects.all()
     skill= SkillModel.objects.all()
     service= ServiceModel.objects.all()
+    review= Review.objects.all().order_by('-pk')
    
     alldata={
         'about':about,
@@ -410,6 +411,7 @@ def Home(request):
         'work':work,
         'site':site,
         'service':service,
+        'review':review,
     }
     
     return render(request,'public/home.html',alldata) 

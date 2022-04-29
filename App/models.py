@@ -84,6 +84,13 @@ class ContactModel(models.Model):
     def __str__(self):
         return self.ContactName
     
+
+class Review(models.Model):
+    ReviewId= models.AutoField(primary_key=True)
+    ClientName= models.CharField(max_length=250)
+    clientReview = models.TextField(max_length=2000)
+    def __str__(self):
+        return self.ClientName
     
 
 # Serilzer Data
